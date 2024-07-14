@@ -116,7 +116,7 @@ img.logo {
   width: 120px;
   height: 40px;
   margin: auto;
-  color: white;
+  color: white ;
   border-radius: 30px;
 }
 
@@ -603,6 +603,8 @@ div.services-card:hover .description {
   }
 
   .registration {
+    color: white;
+    font-weight: bold;
     width: 105px;
     height: 35px;
   }
@@ -828,6 +830,8 @@ div.services-card:hover .description {
   }
 
   .registration {
+    color: white;
+    font-weight: bold;
     font-size: small;
     width: 105px;
     height: 35px;
@@ -1049,6 +1053,314 @@ div.services-card:hover .description {
 }
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
+  .large {
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: var(--line-height-large);
+  }
+
+  .small {
+    font-size: smaller;
+    line-height: var(--line-height-small);
+  }
+
+  /* Header */
+  header{
+    padding: 0px;
+  }
+  img.logo {
+    width: 100px;
+  }
+  
+  .nav {
+    width: 300px;
+    gap: 0px;
+    top: 17.5px;
+    right: 30px;
+  }
+
+  .nav li {
+    font-size: smaller;
+    top: 0px;
+    left: 0px;
+  }
+
+  header * {
+    padding-inline: 8px;
+    height: 90px;
+  }
+
+  .nav a {
+    font-weight: 200;
+    font-size: smaller;
+  }
+
+  .registration {
+    font-size: small;
+    width: fit-content;
+    background-color: unset;
+    height: 35px;
+    margin: 10px;
+  }
+  .registration:hover {
+    color: #17C32A;
+    background-color: unset;
+  }
+
+  select.services {
+    width: 70px;
+    margin-block: auto;
+  }
+
+  /* banners */
+  div.banners {
+    top: 90px;
+  }
+
+  .corner-right {
+    width: 80px;
+    height: 250px;
+  }
+
+  .corner-left {
+    width: 150px;
+  }
+
+  /* Welcome */
+  div.welcome {
+    top: 90px;
+    width: 100vw;
+  }
+
+  .welcome .container {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    gap: 70px;
+    width: 80vw;
+  }
+
+  .welcome-img {
+    width: 100%;
+  }
+
+  .welcome .text {
+    text-align: center;
+    top: 0px;
+  }
+  .welcome .large {
+    font-size: 50px;
+  }
+  .welcome .small {
+    font-size: 20px;
+  }
+  
+
+  /* pros */
+  div.pros {
+    margin:auto;
+    top: 340px;
+    width: 90vw;
+    height: fit-content;
+  }
+
+  /* about */
+  .about {
+    flex-flow: column-reverse;
+    top: 450px;
+  }
+
+  div.about-bg {
+    display: none;
+  }
+  .about p {
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  .about span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .about-left-image {
+    top: -60px;
+    right: -80px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .cards {
+    flex-flow: column;
+    width: 100%;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .card {
+    background-image: linear-gradient(to right, var(--color3), var(--color2));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 0px;
+    max-width: 100%;
+  }
+
+  .card .icon {
+    background-color: white;
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .card p {
+    font-size: medium;
+    font-weight: 400;
+  }
+
+  .card span {
+    font-size: x-large;
+  }
+
+  /* Services */
+  div.services {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    top: 550px;
+    width: 80vw;
+    margin:auto;
+  }
+
+  .services-left-image {
+    width: 400px;
+    height: 400px;
+    left: 0px;
+  }
+
+  div.services p {
+    width: 100%;
+  }
+
+  div.services p.growth {
+    position: relative;
+    font-weight: bolder;
+    width: 100%;
+    margin: 0px;
+    top: -50px;
+  }
+
+  div.services span.large {
+    font-size: xx-large;
+  }
+
+  div.services span.small {
+    font-size: small;
+  }
+
+  div.services p.center {
+    position: absolute;
+    display: block;
+    font-size: xx-large;
+    font-weight: bold;
+    width: 300px;
+    margin-inline: calc(40vw - 150px);
+    top: 700px;
+  }
+
+  /* Cards */
+  .services-cards {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    top: 100px;
+  }
+
+  img.services-card {
+    width: 220px;
+    height: 220px;
+  }
+
+  div.services-card .description {
+    line-height: 1.5em;
+    z-index: -1;
+    font-size: 11px;
+    width: 220px;
+    height: 220px;
+  }
+  div.services-card:hover img.services-card {
+    transform: translateX(-110px);
+  }
+  
+  div.services-card:hover .description {
+    transform: translateX(110px);
+  }
+
+  /* Recomm */
+  .recommendation {
+    width: 100vw;
+    top: 800px;
+  }
+
+  .recommendation p {
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+  br{
+    line-height: 1px;
+  }
+  /* contatct */
+  .contacts {
+    line-height: 35px;
+    top: 1000px;
+    width: 80%;
+  }
+  .contact{
+    gap: 10px;
+  }
+  .classic {
+    font-size: large;
+    margin-bottom: 70px;
+  }
+
+  .mini-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contacts a {
+    font: bold 30px;
+  }
+
+  .social {
+    gap: 30px;
+  }
+
+  .social a div {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Copy */
+  .copy {
+    line-height: 20px;
+    font-size: large;
+    background-color: unset;
+    line-height: 2em;
+    top: 1100px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 500px){
   .large {
     font-size: 25px;
     font-weight: bolder;
