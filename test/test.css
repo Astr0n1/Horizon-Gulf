@@ -1,0 +1,11 @@
+div.about-bg{
+  position: relative;
+  overflow-x: hidden;
+  top: 850px;
+  width: 100vw;
+  height: fit-content;
+}
+img.about-bg{
+  width: 150vw;
+  transform: translateX(-30%);
+}
