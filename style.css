@@ -178,7 +178,7 @@ div.welcome {
 .welcome-img {
   position: relative;
   width: 35vw;
-  animation: from-right 1s ease-out  ;
+  /* animation: from-right 1s ease-out  ; */
 }
 
 /* pros */
