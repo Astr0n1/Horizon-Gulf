@@ -48,10 +48,13 @@ body * {
 }
 
 /* Header */
+.nav-button{
+  display: none;
+}
 header {
-  z-index: 5;
   position: fixed;
   display: flex;
+  z-index: 20;
   background-color: white;
   justify-content: space-between;
   align-items: center;
@@ -77,9 +80,9 @@ img.logo {
 }
 
 .nav * {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   font-family: "Cairo", sans-serif;
   font-weight: 200;
   text-decoration: none;
@@ -218,7 +221,7 @@ div.about-bg {
   position: relative;
   top: 50px;
   width: 250px;
-  height: 250px;
+  height: 250px; 
   align-self: center;
 }
 
@@ -653,7 +656,6 @@ div.services-card:hover .description {
 
   .services img {
     width: 400px;
-    height: 400px;
     left: 0px;
   }
 
@@ -891,7 +893,6 @@ div.services-card:hover .description {
 
   .services img {
     width: 250px;
-    height: 250px;
     left: 0px;
   }
 
@@ -1164,7 +1165,6 @@ div.services-card:hover .description {
 
   .services img {
     width: 400px;
-    height: 400px;
     left: 0px;
   }
 
@@ -1210,7 +1210,7 @@ div.services-card:hover .description {
 
   img.services-card {
     width: 220px;
-    height: 220px;
+    height: 190px;
   }
 
   div.services-card .description {
@@ -1218,14 +1218,16 @@ div.services-card:hover .description {
     z-index: -1;
     font-size: 11px;
     width: 220px;
-    height: 220px;
+    height: 190px;
   }
   div.services-card:hover img.services-card {
-    transform: translateX(-110px);
+    z-index: 10;
+    transform: translateY(90px);
   }
   
   div.services-card:hover .description {
-    transform: translateX(110px);
+    z-index: 10;
+    transform: translateY(-100px);
   }
 
   /* Recomm */
@@ -1298,41 +1300,76 @@ div.services-card:hover .description {
   }
 
   /* Header */
+  .nav-button{
+    position: absolute;
+    z-index: 6;
+    right: 15vw;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color3);
+    transition: 1s;
+  }
+  .nav-button:hover{
+    background-color: var(--color1);
+  }
   header{
-    padding: 0px;
+    display: flex;
   }
   img.logo {
-    width: 100px;
+    box-sizing: content-box;
+    position: relative;
+    top: 0px;
+    width: 130px;
+    padding-right: 90vw;
+    background-color: #fff;
   }
   
   .nav {
-    justify-content: flex-end;
-    gap: 10px;
-    right: 30px;
+    background-color: #DDD;
+    position: fixed;
+    flex-flow: column;
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding-left: 0px;
+    width: 50vw;
+    padding-inline: 0px;
+    padding-block: 10px;
+    z-index: -1;
+    height: 200px;
+    top:-200px;
+    right: 20px;
+  }
+  .nav-button:hover ~ .nav{
+    top: 63px;
   }
 
-  .nav * {
-    font-weight: 200;
-    justify-content: flex-end;
-    font-size: x-small;
-    color: #222;
+  nav *:not(option) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: unset;
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding-block: 5px;
+    transition: 1s 0s;
   }
-
+  
+  .nav *:hover {
+    color: var(--color3);
+    transition: 1s;
+  }
+  
   .registration {
-    font-weight: bold;
-    font-size: small;
     padding: 0px;
-    width: fit-content;
     background-color: unset;
   }
-  .registration:hover {
-    color: #17C32A;
-    background-color: unset;
-  }
-
   select.services {
     width: 60px;
-    margin-block: auto;
   }
 
   /* banners */
@@ -1351,7 +1388,7 @@ div.services-card:hover .description {
 
   /* Welcome */
   div.welcome {
-    top: 90px;
+    top: 63px;
     width: 100vw;
   }
 
@@ -1462,7 +1499,6 @@ div.services-card:hover .description {
 
   .services img {
     width: 400px;
-    height: 400px;
     left: 0px;
   }
 
@@ -1508,7 +1544,7 @@ div.services-card:hover .description {
 
   img.services-card {
     width: 220px;
-    height: 220px;
+    height: 190px;
   }
 
   div.services-card .description {
@@ -1516,14 +1552,16 @@ div.services-card:hover .description {
     z-index: -1;
     font-size: 11px;
     width: 220px;
-    height: 220px;
+    height: 190px;
   }
   div.services-card:hover img.services-card {
-    transform: translateX(-110px);
+    z-index: 10;
+    transform: translateY(90px);
   }
   
   div.services-card:hover .description {
-    transform: translateX(110px);
+    z-index: 10;
+    transform: translateY(-100px);
   }
 
   /* Recomm */
@@ -1574,7 +1612,7 @@ div.services-card:hover .description {
   /* Copy */
   .copy {
     line-height: 20px;
-    font-size: large;
+    font-size: medium;
     background-color: unset;
     line-height: 2em;
     top: 1100px;

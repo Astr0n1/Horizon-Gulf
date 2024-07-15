@@ -15,51 +15,52 @@ body * {
 /* Header */
 header {
   position: fixed;
+  display: block;
   z-index: 5;
-  display: flex;
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  top: 0px;
-  left: 0px;
   width: 100vw;
   text-wrap: nowrap;
 }
 
 img.logo {
-  width: 10vw;
-  padding: 0px;
+  box-sizing: content-box;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 130px;
+  padding-right: 90vw;
   background-color: #fff;
 }
 
 .nav {
-  background-color: rgb(240, 0, 0);
+  background-color: rgb(145, 141, 141);
   display: flex;
-  flex-flow: column;
   position: fixed;
+  flex-flow: column;
+  padding-left: 0px;
   box-sizing: border-box;
   justify-content: space-around;
   align-items: center;
   text-wrap: nowrap;
   width: 25vw;
-  padding: 0px;
+  padding-block: 10px;
   gap: 20px;
-  z-index: 6;
-  top: 17.5px;
-  right: 20px;
+  z-index: -1;
+  top: 0px;
+  right: 400px;
   transition: 2s;
 }
 
-.nav li {
+.nav *:not(option) {
   box-sizing: border-box;
+  background-color: unset;
   position: relative;
   width: 100%;
   top: 0px;
   left: 0px;
-}
-
-.nav a {
-  background-color: transparent;
+  padding-block: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,40 +70,19 @@ img.logo {
   color: #222;
 }
 
-.nav a:hover {
+
+.nav *:hover {
   color: var(--color3);
   transition: 0.5s;
 }
 
-.registration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #17C32A;
-  font-weight: 600;
-  width: 120px;
-  height: 40px;
-  margin: auto;
-  color: white ;
-  border-radius: 30px;
-}
-
-.registration:hover {
-  color: white;
-  background-color: var(--color1);
-  transition: 0.7s;
-}
-
 select.services {
-  width: 120px;
-  border: none;
-  background-color: unset;
-  cursor: pointer;
+  width: 100px;
 }
 
 option {
   font-size: small;
-  font-weight: 200;
+  font-weight: 800;
   text-align: left;
   background-color: white;
   border-bottom: 2px solid #222;
