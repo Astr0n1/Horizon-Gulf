@@ -1541,7 +1541,7 @@ div.services-card:hover .description {
     font-weight: bold;
     width: 300px;
     margin-inline: calc(40vw - 150px);
-    top: 700px;
+    top: 450px;
   }
 
   /* Cards */
