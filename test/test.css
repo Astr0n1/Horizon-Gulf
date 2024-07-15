@@ -1,0 +1,120 @@
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0px;
+  font-size: small;
+  line-height: var(--line-height);
+  width: 100vw;
+}
+
+body * {
+  box-sizing: border-box;
+  background-color: rebeccapurple;
+  margin: 0px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  text-wrap: nowrap;
+}
+
+img.logo {
+  width: 10vw;
+  padding: 0px;
+  background-color: #fff;
+}
+
+.nav {
+  background-color: rgb(240, 0, 0);
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+  text-wrap: nowrap;
+  width: 25vw;
+  padding: 0px;
+  gap: 20px;
+  z-index: 6;
+  top: 17.5px;
+  right: 20px;
+  transition: 2s;
+}
+
+.nav li {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.nav a {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cairo", sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  color: #222;
+}
+
+.nav a:hover {
+  color: var(--color3);
+  transition: 0.5s;
+}
+
+.registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17C32A;
+  font-weight: 600;
+  width: 120px;
+  height: 40px;
+  margin: auto;
+  color: white ;
+  border-radius: 30px;
+}
+
+.registration:hover {
+  color: white;
+  background-color: var(--color1);
+  transition: 0.7s;
+}
+
+select.services {
+  width: 120px;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+option {
+  font-size: small;
+  font-weight: 200;
+  text-align: left;
+  background-color: white;
+  border-bottom: 2px solid #222;
+  padding: 10px;
+  min-height: 40px;
+}
+
+option:hover {
+  text-align: left;
+  background-color: #EEE;
+  color: red;
+  border-bottom: 2px solid #222;
+  padding: 10px;
+  min-height: 50px;
+}
