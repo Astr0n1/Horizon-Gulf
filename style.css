@@ -49,55 +49,34 @@ body * {
 
 /* Header */
 header {
-  padding-top: 15px;
   z-index: 5;
   position: fixed;
   display: flex;
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  top: 0px;
-  left: 0px;
+  align-content: start;
   width: 100vw;
   text-wrap: nowrap;
 }
 
 img.logo {
   position: relative;
-  z-index: 10;
   width: 10vw;
   padding: 0px;
 }
 
-ul{
-  list-style: none;
-}
 .nav {
-  background-color: white;
+  list-style: none;
   display: flex;
-  position: fixed;
-  box-sizing: border-box;
-  justify-content: space-around;
   align-items: center;
   text-wrap: nowrap;
-  width: 40vw;
-  padding: 0px;
+  padding-inline: 10px;
   gap: 20px;
-  z-index: 6;
-  top: 17.5px;
-  right: 20px;
-  transition: 2s;
+  transition: 1s;
 }
 
-.nav li {
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-}
-
-.nav a {
+.nav * {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,9 +97,8 @@ ul{
   align-items: center;
   background-color: #17C32A;
   font-weight: 600;
-  width: 120px;
-  height: 40px;
-  margin: auto;
+  padding: 10px 20px;
+  margin-right: 3vw;
   color: white ;
   border-radius: 30px;
 }
@@ -256,19 +234,14 @@ div.about-bg {
 }
 
 .card {
-  display: grid;
   gap: 50px;
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 60px 1fr;
   color: white;
   flex: 1 0 300px;
   max-width: calc((90vw - 270px)/2);
-
 }
 
 .card .icon {
-  grid-area: 1 / 1 / 2 / 2;
-  display: inline-block;
+  float: left;
   width: 4vw;
   height: 4vw;
   background-color: rebeccapurple;
@@ -278,7 +251,6 @@ div.about-bg {
 }
 
 .card p {
-  font-size: 12px;
   grid-area: 1 / 2 / 3 / 3;
   color: white;
   display: inline;
@@ -596,25 +568,6 @@ div.services-card:hover .description {
     width: 160px;
   }
 
-  .nav {
-    width: 450px;
-    gap: 0px;
-    top: 17.5px;
-    right: 50px;
-  }
-
-  .nav li {
-    top: 0px;
-    left: 0px;
-  }
-
-  .registration {
-    color: white;
-    font-weight: bold;
-    width: 105px;
-    height: 35px;
-  }
-
   select.services {
     width: 100px;
     margin-block: auto;
@@ -812,43 +765,26 @@ div.services-card:hover .description {
     width: 160px;
   }
 
-  .nav {
-    width: 430px;
-    gap: 0px;
-    top: 17.5px;
-    right: 50px;
-  }
-
-  .nav li {
-    top: 0px;
-    left: 0px;
-  }
-
-
   header * {
     padding-inline: 8px;
-    height: 90px;
   }
-
-  header a {
+  .nav {
+    gap: 3px;
+  }
+  .nav * {
     font-weight: 200;
-    font-size: smaller;
-  }
-
-  .registration {
-    color: white;
-    font-weight: bold;
     font-size: small;
-    width: 105px;
-    height: 35px;
-    margin: 10px;
   }
 
   select.services {
-    width: 100px;
-    margin-block: auto;
+    width: 80px;
   }
 
+  .registration {
+    height: auto-fit;
+    font-weight: bold;
+    padding-block: 5px;
+  }
   /* banners */
   div.banners {
     top: 90px;
@@ -1071,51 +1007,34 @@ div.services-card:hover .description {
   }
 
   /* Header */
-  header{
-    padding: 0px;
-  }
   img.logo {
     width: 100px;
   }
-  
-  .nav {
-    width: 300px;
+  .nav{
     gap: 0px;
-    top: 17.5px;
-    right: 30px;
   }
-
-  .nav li {
-    font-size: smaller;
-    top: 0px;
-    left: 0px;
+  .nav * {
+    font-weight: 200;
+    justify-content: flex-end;
+    font-size: small;
+    color: #222;
   }
 
   header * {
     padding-inline: 8px;
-    height: 90px;
-  }
-
-  .nav a {
-    font-weight: 200;
-    font-size: smaller;
   }
 
   .registration {
-    font-size: small;
-    width: fit-content;
     background-color: unset;
-    height: 35px;
-    margin: 10px;
+    padding: unset;
   }
-  .registration:hover {
+  .nav *:hover {
     color: #17C32A;
     background-color: unset;
   }
 
   select.services {
-    width: 70px;
-    margin-block: auto;
+    width: 80px;
   }
 
   /* banners */
@@ -1387,34 +1306,24 @@ div.services-card:hover .description {
   }
   
   .nav {
-    width: 300px;
-    gap: 0px;
-    top: 17.5px;
+    justify-content: flex-end;
+    gap: 10px;
     right: 30px;
   }
 
-  .nav li {
-    font-size: smaller;
-    top: 0px;
-    left: 0px;
-  }
-
-  header * {
-    padding-inline: 8px;
-    height: 90px;
-  }
-
-  .nav a {
+  .nav * {
     font-weight: 200;
-    font-size: smaller;
+    justify-content: flex-end;
+    font-size: x-small;
+    color: #222;
   }
 
   .registration {
+    font-weight: bold;
     font-size: small;
+    padding: 0px;
     width: fit-content;
     background-color: unset;
-    height: 35px;
-    margin: 10px;
   }
   .registration:hover {
     color: #17C32A;
@@ -1422,7 +1331,7 @@ div.services-card:hover .description {
   }
 
   select.services {
-    width: 70px;
+    width: 60px;
     margin-block: auto;
   }
 
@@ -1500,7 +1409,7 @@ div.services-card:hover .description {
 
   .about-left-image {
     top: -60px;
-    right: -80px;
+    right: 0px;
     width: 300px;
     height: 300px;
   }
