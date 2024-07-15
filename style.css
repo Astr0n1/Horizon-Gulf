@@ -1541,7 +1541,7 @@ div.services-card:hover .description {
     font-weight: bold;
     width: 300px;
     margin-inline: calc(40vw - 150px);
-    top: 300px;
+    top: 0px;
   }
 
   /* Cards */
@@ -1551,7 +1551,7 @@ div.services-card:hover .description {
     justify-content: center;
     gap: 40px;
     width: 100%;
-    top: 150px;
+    top: 400px;
   }
 
   img.services-card {
