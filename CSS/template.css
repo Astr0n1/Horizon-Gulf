@@ -1,0 +1,261 @@
+:root {
+  --gray: #555;
+  --blue: #03a4ed;
+  --green: #41f255;
+  --dark-green: #329615;
+  font-size: 16px;
+}
+/* typography */
+* {
+  box-sizing: border-box;
+  /* outline: 4px solid red; */
+  margin: 0px;
+}
+.fs-300 {
+  font-size: 0.8rem;
+}
+.fs-500 {
+  font-size: 1rem;
+}
+.fs-600 {
+  font-size: 1.3rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+/* end of typography */
+@media (max-width: 900px) {
+  h3 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+}
+body {
+  font-family: "Cairo", sans-serif;
+  font-size: 1rem;
+  margin: 0px;
+}
+.green {
+  color: var(--green);
+}
+.dark-green {
+  color: var(--dark-green);
+}
+.blue {
+  color: var(--blue);
+}
+.gray {
+  color: #555;
+}
+.bold {
+  font-weight: 600;
+}
+.bolder {
+  font-weight: 800;
+}
+a,
+header .services {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--gray);
+}
+a:hover,
+header .services:hover {
+  color: var(--dark-green);
+}
+*::selection {
+  color: white;
+  background: var(--green);
+}
+.container {
+  width: 80vw;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+.section {
+  margin-block: 150px;
+}
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* header */
+header {
+  display: flex;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  text-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding-block: 5px;
+  padding-inline: 30px;
+}
+.logo {
+  width: 200px;
+}
+@media (max-width: 1100px) {
+  .logo{
+    width: 150px;
+  }
+  a,
+  header .services {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--gray);
+  }
+}
+@media (max-width: 400px) {
+  .logo{
+    width: 100px;
+  }
+  .menu i{
+    font-size: 2rem;
+  }
+
+}
+.nav,
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+header ul * {
+  list-style: none;
+}
+header .registration {
+  padding: 8px 20px;
+  background-color: #17c32a;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s;
+}
+header .registration:hover {
+  background-color: #1CC4FF;
+}
+header .services option {
+  background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+  header ul {
+    position: absolute;
+    flex-direction: column;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    padding: 20px;
+  }
+  .menu:hover ~ ul {
+    opacity: 1;
+  }
+  header .registration {
+    padding: unset;
+    background-color: unset;
+    color: #555;
+    font-weight: unset;
+    transition: 0.5s;
+  }
+  header .registration:hover {
+    color: var(--green);
+    background-color: unset;
+  }
+}
+header .services {
+  border: unset;
+  background-color: unset;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu {
+  display: none;
+  font-size: 2rem;
+  transition: 1s;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: contents;
+  }
+}
+/* footer */
+.contacts,
+.contacts .classic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.contacts .classic *:hover {
+  color: var(--gray);
+}
+.social {
+  display: flex;
+  gap: 10px;
+}
+.social a {
+  padding: 15px;
+  background-color: #ffe;
+  border-radius: 50%;
+}
+.social a:hover {
+  color: white;
+}
+.social .facebook:hover {
+  background-color: blue;
+}
+.social .whatsapp:hover {
+  background-color: var(--dark-green);
+}
+.social .instagram:hover {
+  background-color: violet;
+}
+.social .linkedin:hover {
+  background-color: lightskyblue;
+}
+.copy {
+  color: #555;
+  text-align: center;
+}
+@media (max-width:600px) {
+  .fs-300{
+    font-size: 0.5rem;
+  }
+}

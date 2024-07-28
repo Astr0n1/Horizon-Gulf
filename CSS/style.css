@@ -1,0 +1,317 @@
+:root {
+  --gray: #555;
+  --blue: #03a4ed;
+  --green: #41f255;
+  --dark-green: #329615;
+  font-size: 16px;
+}
+.panners {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  .panners * {
+    width: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .panners * {
+    width: 70px;
+  }
+}
+.welcome {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome > img {
+  max-width: 800px;
+  width: 55%;
+}
+.welcome > div {
+  width: 43%;
+}
+@media (max-width: 1100px) {
+  .welcome {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .welcome > img,
+  .welcome > div {
+    text-align: center;
+    max-width: unset;
+    width: 100%;
+    max-width: 700px;
+  }
+}
+/* about */
+.about {
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+  padding: 17% 0 20%;
+}
+.about > img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 150%;
+  transform: translateX(-30%);
+  height: 100%;
+}
+.about > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.about .container img {
+  width: 400px;
+  height: 400px;
+}
+.about .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.about .card {
+  flex: 0 0 calc(50% - 15px);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+.about .card i {
+  float: left;
+  padding: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 15px;
+  color: var(--green);
+  background-color: white;
+}
+@media (max-width: 1500px) {
+  .about > img {
+    display: none;
+  }
+  .about > div {
+    flex-direction: column-reverse;
+  }
+  .about .card {
+    background-image: linear-gradient(-90deg, var(--green), var(--dark-green));
+  }
+}
+@media (max-width: 800px) {
+  .about .cards {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .about .container img {
+    max-width: 400px;
+    width: 90vw;
+    max-height: 400px;
+    height: 90vw;
+  }
+}
+div.services {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  align-items: center;
+}
+div.services .cards {
+  align-items: center;
+  gap: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.services-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .services-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  div.services h3 {
+    text-align: center;
+  }
+}
+.services-container img {
+  width: 600px;
+  max-width: 50%;
+}
+@media (max-width: 800px) {
+  .services-container img {
+    width: 70vw;
+    max-width: unset;
+  }
+}
+.services-cards {
+  display: flex;
+  gap: 50px;
+}
+.services-card {
+  position: relative;
+}
+.services-card p {
+  margin-bottom: 15px;
+}
+.services-card img {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 0 10px rgb(200, 200, 200, 1);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.services-card div {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  color: white;
+  background-image: linear-gradient(-90deg, var(--green), var(--dark-green));
+  border-radius: 22px;
+  transition: 0.5s;
+  padding: 10px;
+}
+.services-card img:hover {
+  transform: translateY(50%);
+}
+.services-card img:hover + div {
+  transform: translateY(-50%);
+}
+@media (max-width: 900px) {
+  .services-cards {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+  .services-card img,
+  .services-card div {
+    width: 50vw;
+    height: 50vw;
+  }
+  .services-card img:hover {
+    transition: 0.5s;
+    margin-top: 100%;
+  }
+  .services-card img:hover {
+    transform: translateY(0vw);
+  }
+  .services-card img:hover + div {
+    transform: translateY(0vw);
+  }
+}
+@media (max-width: 400px) {
+  .services-cards {
+    font-size: 0.5rem;
+  }
+}
+/* End of index */ /* End of index */ /* End of index */ /* End of index */ /* End of index  */
+/* Start of contacts */ /* Start of contacts */ /* Start of contacts */ /* Start of contacts */
+.contact-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contact-start h2 {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 90px;
+}
+.contact-start h2::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 6px;
+  border-radius: 3px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #aaa;
+}
+.contact-start iframe {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  outline: 2px solid #ddd;
+}
+.contact-start .cards {
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+  justify-content: space-between;
+  transform: translateY(-20%);
+}
+.contact-start .contact-card {
+  background-color: #fff;
+  padding: 30px 80px;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.contact-start .contact-card:hover {
+  transform: translateY(-30%);
+}
+/* .contact-start .contact-card:hover ~ .contact-card:not(:hover) {
+  opacity: 0;
+} */
+@media (max-width: 800px) {
+  .contact-start .cards {
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    gap: 50px;
+    transform: translateY(50px);
+  }
+}
+.contact-end {
+  text-align: center;
+}
+.contact-end h3{
+  transform: translateY(-10px);
+  margin-bottom: 20px;
+}
+.contact-end form{
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-end form input:not([type="submit"]){
+  border: none;
+  background-color: rgb(240, 240, 240, 0.8);
+  padding: 12px;
+  flex:0 1 calc(50% - 15px);
+}
+.contact-end form textarea{
+  border: none;
+  background-color: rgb(240, 240, 240, 0.8);
+  padding: 12px;
+  width: 100%;
+}
+.contact-end [type="submit"]{
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 12px 20px;
+  background-color: #17C32A;
+}
+@media (max-width:700px) {
+  .contact-end form {
+    justify-content: center;
+  }
+  .contact-end form input:not([type="submit"]){
+    flex:1 1 100%;
+  }
+}

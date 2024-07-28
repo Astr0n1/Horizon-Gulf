@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/template.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--  -->
     <title>Home</title>
   </head>
   <body>
     <header>
-      <div class="nav-button"></div>
       <img class="logo" src="assets/ab-cover.webp" alt>
-      <ul class="nav">
-        <li><a href="#">Home</a></li>
+      <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+      <ul class="nav ">
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">About</a></li>
         <li class="services">
           <select class="services" caption="Services">
@@ -31,39 +35,41 @@
             <option value class="services"></option>
           </select>
         </li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="pages/contact-us.html">Contact Us</a></li>
         <li><a href="#" class="registration">Registration</a></li>
       </ul>
     </header>
-    <div class="welcome">
+    <div class="panners">
       <img src="assets/baner-dec-left.png" alt class="corner-left">
       <img src="assets/baner-dec-right.png" alt class="corner-right">
-      <div class="container">
-        <img class="welcome-img" src="assets/banner-right-image.png">
-        <div class="text">
-          <p>
-            <span class="green bold">WELCOME</span><br>
-            <span class="large">what you can
-              <span class="blue">expect</span>
-              from a partnership
-              <span class="green">with HORIZON GULF</span>
-            </p>
-            <p class="small">Entering into a partnership with
-              <span class="green">Horizon Gulf</span>
-              market research can bring various benefits, depending on your
-              specific goals and needs. Here are several expectations and
-              potential advantages you can anticipate from such a collaboration:
-            </p>
-          </div>
-        </div>
+    </div>
+    <div class="welcome container section">
+      <img class="welcome-img" src="assets/banner-right-image.png">
+      <div class="text">
+        <p>
+          <p class="dark-green bolder">WELCOME</p>
+          <h2>
+            what you can
+            <span class="blue">expect</span>
+            from a partnership
+            <span class="green">with HORIZON GULF</span>
+          </h2>
+        </p>
+        <p class="gray">Entering into a partnership with
+          <span class="green">Horizon Gulf</span>
+          market research can bring various benefits, depending on your
+          specific goals and needs. Here are several expectations and
+          potential advantages you can anticipate from such a collaboration:
+        </p>
       </div>
     </div>
-    <div class="pros">
+    <div class="pros container section">
       <ol class="pros">
         <li>
           <p class="blue">Expertise and Specialization:</p>
           <p>• Market research companies typically have expertise in designing
-            and conducting research studies. They understand the methodologies,
+            and conducting research studies. They understand the
+            methodologies,
             data collection techniques, and analysis tools required for
             effective research.</p>
         </li>
@@ -83,7 +89,8 @@
         </li>
         <li>
           <p class="blue">Objective and Unbiased Insights:</p>
-          <p>• External market research firms bring an objective perspective to
+          <p>• External market research firms bring an objective perspective
+            to
             the analysis. They are not influenced by internal biases or
             preconceptions, providing a more unbiased assessment of the market
             and your business environment.</p>
@@ -105,21 +112,25 @@
         <li>
           <p class="blue">Strategic Guidance:</p>
           <p>• A reputable market research partner can provide strategic
-            guidance based on the insights gathered. They can help you interpret
+            guidance based on the insights gathered. They can help you
+            interpret
             the data in the context of your business objectives and support
             decision-making processes.</p>
         </li>
         <li>
           <p class="blue">Innovation and Technology:</p>
-          <p>• Market research companies often leverage the latest technologies
-            and methodologies for data collection and analysis. Partnering with
+          <p>• Market research companies often leverage the latest
+            technologies
+            and methodologies for data collection and analysis. Partnering
+            with
             them can provide access to innovative approaches that may not be
             readily available in-house.</p>
         </li>
         <li>
           <p class="blue">Scalability</p>
           <p>• Depending on your needs, market research companies can scale
-            their services to accommodate projects of varying sizes. Whether you
+            their services to accommodate projects of varying sizes. Whether
+            you
             need a one-time market study or ongoing research support, they can
             adapt to your requirements.</p>
         </li>
@@ -132,223 +143,207 @@
         </li>
         <li>
           <p class="blue">Risk Mitigation:</p>
-          <p>• Conducting market research involves certain risks, such as biased
-            data collection or misinterpretation of results. Professional market
+          <p>• Conducting market research involves certain risks, such as
+            biased
+            data collection or misinterpretation of results. Professional
+            market
             research companies follow rigorous methodologies to minimize these
             risks, ensuring the reliability of the findings.person graphic</p>
         </li>
       </ol>
     </div>
-    <div class="about-bg">
-      <img src="assets/about-bg.png">
+    <div class="about section">
+      <img class="cenered" src="assets/about-bg.png" alt>
+      <div class="container">
+        <img src="assets/about-left-image.png" class="about-left-image">
+        <div class="cards">
+          <div class="card">
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            <div class="description">
+              <p class="fs-600 bold">Quantitative Research</p>
+              <p>
+                Involves the collection and analysis of numerical data to
+                understand
+                phenomena, behaviors, or patterns within a population. It relies
+                on
+                structured methodologies, statistical analysis, and mathematical
+                models to draw conclusions and make generalizations.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            <div class="description">
+              <p class="fs-600 bold">Qualitative Research</p>
+              <p>
+                Is an exploratory method used to gain an understanding of
+                underlying
+                reasons, motivations, and behaviors. It aims to gather in-depth
+                insights into human experiences, attitudes, beliefs, and social
+                phenomena.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            <div class="description">
+              <p class="fs-600 bold">Healthcare Research</p>
+              <p>
+                Often involves a blend of qualitative and quantitative methods due
+                to the complexity and multidimensional nature of health-related
+                issues. Quantitative research plays a crucial role in this domain
+                in several ways
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            <div class="description">
+              <p class="fs-600 bold">Mystery Shopping</p>
+              <p>
+                Is a market research technique where individuals, known as mystery
+                shoppers, are hired to anonymously evaluate and assess the quality
+                of services, customer experience, and adherence to company
+                standards at various establishments.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            <div class="description">
+              <p class="fs-600 bold">Scripting</p>
+              <p>
+                In a general sense refers to writing sequences of instructions or
+                commands that can be executed by a computer. It's often used to
+                automate tasks, perform specific functions, or control software
+                and systems
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            <div class="description">
+              <p class="fs-600 bold">Coding &data entry</p>
+              Both coding and data entry play essential roles in managing and
+              utilizing information effectively, whether in software
+              development,
+              data analysis, or maintaining databases. Are you interested in
+              learning more about a particular aspect of coding or data entry
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            <div class="description">
+              <p class="fs-600 bold">Translating</p>
+              <p>
+                Involves converting text or speech from one language into another
+                while preserving its meaning, context, and tone. It's a complex
+                task
+                that requires a deep understanding of both the source and target
+                languages, as well as cultural nuances.Involves converting text or
+                speech from one language into another while preserving its
+                meaning,
+                context, and tone. It's a complex task that requires a deep
+                understanding of both the source and target languages, as well as
+                cultural nuances.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="about">
-      <img src="assets/about-left-image.png" class="about-left-image">
+    <div class="services container section">
+      <div class="services-container">
+        <img src="assets/services-left-image.png">
+        <div class="growth">
+          <h3>
+            Grow Your Business With Our
+            <span class="blue">Degital </span>
+            Service &
+            <span class="green">Project Ideas</span>
+          </h3>
+          <p class="small">
+            <span class="bold">Absolutely, growing a business through digital
+              services and innovative project ideas can be incredibly impactful
+            </span>
+            At
+            <span class="green">Horizon Gulf </span>
+            Marketing Consultancy, We guarantee High quality of the standard
+            research & data collection of all types & forms of traditional
+            Quantitative Studies.
+          </p>
+        </div>
+      </div>
       <div class="cards">
-        <div class="card">
-          <div class="icon"></div>
-          <p class="description">
-            <span>Quantitative Research</span><br>
-            Involves the collection and analysis of numerical data to understand
-            phenomena, behaviors, or patterns within a population. It relies on
-            structured methodologies, statistical analysis, and mathematical
-            models to draw conclusions and make generalizations.</p>
-        </div>
-        <div class="card">
-          <div class="icon"></div>
-          <p class="description">
-            <span>Qualitative Research</span><br>
-            Is an exploratory method used to gain an understanding of underlying
-            reasons, motivations, and behaviors. It aims to gather in-depth
-            insights into human experiences, attitudes, beliefs, and social
-            phenomena.</p>
-        </div>
-        <div class="card">
-          <div class="icon"></div>
-          <p class="description">
-            <span>Healthcare Research</span><br>
-            Often involves a blend of qualitative and quantitative methods due
-            to the complexity and multidimensional nature of health-related
-            issues. Quantitative research plays a crucial role in this domain in
-            several ways</p>
-        </div>
-        <div class="card">
-          <div class="icon"></div>
-          <p class="description">
-            <span>Mystery Shopping</span><br>
-            Is a market research technique where individuals, known as mystery
-            shoppers, are hired to anonymously evaluate and assess the quality
-            of services, customer experience, and adherence to company standards
-            at various establishments.</p>
-        </div>
-        <div class="card">
-          <div class="icon"></div>
-          <p class="description">
-            <span>Scripting</span><br>
-            In a general sense refers to writing sequences of instructions or
-            commands that can be executed by a computer. It's often used to
-            automate tasks, perform specific functions, or control software and
-            systems</p>
-        </div>
-        <div class="card">
-          <div class="icon"></div>
-          <p class="description">
-            <span>Coding &data entry</span><br>
-            Both coding and data entry play essential roles in managing and
-            utilizing information effectively, whether in software development,
-            data analysis, or maintaining databases. Are you interested in
-            learning more about a particular aspect of coding or data entry</p>
-        </div>
-        <div class="card">
-          <div class="icon"></div>
-          <p class="description">
-            <span>Translating</span><br>
-            Involves converting text or speech from one language into another
-            while preserving its meaning, context, and tone. It's a complex task
-            that requires a deep understanding of both the source and target
-            languages, as well as cultural nuances.Involves converting text or
-            speech from one language into another while preserving its meaning,
-            context, and tone. It's a complex task that requires a deep
-            understanding of both the source and target languages, as well as
-            cultural nuances.</p>
+        <h3>
+          See What Our Agency
+          <span class="blue">Unique </span>
+          At & What We
+          <span class="green">Provide</span>
+        </h3>
+        <div class="services-cards">
+          <div class="services-card">
+            <img src="assets/b2b.png" width="200" class="services-card b2b">
+            <div>
+              <p class="bolder">Business to business</p>
+              Business-to-business (B2B) marketing research focuses on
+              understanding the needs
+            </div>
+          </div>
+          <div class="services-card">
+            <img src="assets/clt.png" width="200" class="services-card clt">
+            <div>
+              <p class="bolder">CLT</p>
+              A center location test (CLT) is a market research methodology used
+              to gather feedback
+            </div>
+          </div>
+          <div class="services-card">
+            <img src="assets/mystry.png" width="200" class="services-card ms">
+            <div>
+              <p class="bolder">Mystery Shopping</p>
+              Is a market research technique where individuals, known as mystery
+              shoppers
+            </div>
+          </div>
+          <div class="services-card">
+            <img src="assets/care.png" width="200" class="services-card hc">
+            <div>
+              <p class="bolder">Health Care</p>
+              Often involves a blend of qualitative and quantitative methods due
+              to the complexity......
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="services">
-      <img src="assets/services-left-image.png">
-      <p class="growth">
-        <span class="large">
-          Grow Your Business With Our
-          <span class="blue">Degital </span>
-          Service &
-          <span class="green">Project Ideas</span>
-        </span><br><br>
-        <span class="small">
-          <span class="bold">Absolutely, growing a business through digital
-            services and innovative project ideas can be incredibly impactful
-          </span>
-          At
-          <span class="green">Horizon Gulf </span>
-          Marketing Consultancy, We guarantee High quality of the standard
-          research & data collection of all types & forms of traditional
-          Quantitative Studies.
-        </span>
-      </p>
-      <p class="center">
-        See What Our Agency
-        <span class="blue">Unique </span>
-        At & What We
-        <span class="green">Provide</span>
-      </p>
-      <div class="services-cards">
-        <div class="services-card">
-          <div class="description">
-            <span class="bolder">Business to business</span><br><br>
-            Business-to-business (B2B) marketing research focuses on
-            understanding the needs
-          </div>
-          <img src="assets/b2b.png" width="200" class="services-card b2b">
-        </div>
-        <div class="services-card">
-          <div class="description">
-            <span class="bolder">CLT</span><br><br>
-            A center location test (CLT) is a market research methodology used
-            to gather feedback
-          </div>
-          <img src="assets/clt.png" width="200" class="services-card clt">
-        </div>
-        <div class="services-card">
-          <div class="description">
-            <span class="bolder">Mystery Shopping</span><br><br>
-            Is a market research technique where individuals, known as mystery
-            shoppers
-          </div>
-          <img src="assets/mystry.png" width="200" class="services-card ms">
-        </div>
-        <div class="services-card">
-          <div class="description">
-            <span class="bolder">Health Care</span><br><br>
-            Often involves a blend of qualitative and quantitative methods due
-            to the complexity......
-          </div>
-          <img src="assets/care.png" width="200" class="services-card hc">
-        </div>
-      </div>
-    </div>
-    <div class="recommendation">
-      <p>
-        <span class="bold "> Some Sectors We Work With</span><br><br>
-        Our Team at Horizon Gulf Marketing Consultancy have 10 years’ experience
-        in handling
-        Market Research Studies in below sectors:
-      </p>
-      <!-- <div class="container">
-        <div class="sliders">
-          <div class="slider one">
-            <div class="icon"></div>
-            <p class="slider">Transportation</p>
-          </div>
-          <div class="slider two">
-            <div class="icon"></div>
-            <p class="slider">Government Entities</p>
-          </div>
-          <div class="slider Three">
-            <div class="icon"></div>
-            <p class="slider">Automotive</p>
-          </div>
-          <div class="slider Four">
-            <div class="icon"></div>
-            <p class="slider">Education</p>
-          </div>
-          <div class="slider Five">
-            <div class="icon"></div>
-            <p class="slider">Financian Services</p>
-          </div>
-          <div class="slider six">
-            <div class="icon"></div>
-            <p class="slider">Tourism</p>
-          </div>
-        </div>
-      </div> -->
     </div>
     <div class="contacts">
       <div class="classic">
-        <div class="contact tel">
-          <div class="mini-icon"></div>
-          <a href="#" class="tel">+201007719507</a>
-        </div>
-        <div class="contact mailto">
-          <div class="mini-icon"></div>
-          <a href="#"
-            class="mailto">aymanhussein0100@gmail.com</a>
-        </div>
-        <div class="contact location">
-          <div class="mini-icon"></div>
-          <a
-            href="#
-            class="location">Tanta, Gharbia Egypt</a>
-        </div>
+        <a href="#" class="contact tel">
+          <i class="fa-solid fa-phone fa-1x"></i>
+          +201007719507
+        </a>
+        <a href="#" class="contact mailto">
+          <i class="fa-solid fa-envelope fa-1x"></i>
+          aymanhussein0100@gmail.com
+        </a>
+        <a href="#" class="contact location">
+          <i class="fa-solid fa-location-dot fa-1x"></i>
+          Tanta, Gharbia Egypt
+        </a>
       </div>
       <div class="social">
-        <div class="facebook">
-          <a href="#" class="facebook"><div
-              class="mini-icon"></div></a>
-        </div>
-        <div class="Whatsapp">
-          <a href="#" class="Whatsapp"><div
-              class="mini-icon"></div></a>
-        </div>
-        <div class="instagram">
-          <a href="#" class="instagram"><div
-              class="mini-icon"></div></a>
-        </div>
-        <div class="linkedin">
-          <a href="#" class="linkedin"><div
-              class="mini-icon"></div></a>
-        </div>
+        <a href="#" class="facebook"><i
+            class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="#" class="whatsapp"><i
+            class="fa-brands fa-whatsapp fa-2x"></i></a>
+        <a href="#" class="instagram"><i
+            class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#" class="linkedin"><i
+            class="fa-brands fa-linkedin fa-2x"></i></a>
       </div>
     </div>
-    <div class="copy">
+    <div class="copy fs-300">
       © Copyright 2023 Horizon Gulf. All Rights Reserved.
       <br>
       <div class="design">
