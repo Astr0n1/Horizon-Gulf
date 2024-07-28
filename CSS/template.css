@@ -173,7 +173,7 @@ header .services option {
   header ul {
     position: absolute;
     flex-direction: column;
-    opacity: 0;
+    display:none;
     z-index: 1;
     width: 100%;
     top: 60px;
@@ -182,7 +182,7 @@ header .services option {
     padding: 20px;
   }
   .menu:hover ~ ul {
-    opacity: 1;
+    display:flex;
   }
   header .registration {
     padding: unset;
