@@ -581,7 +581,7 @@ div.services .cards {
 }
 input[type="file"] {
   width: 240px;
-  border: unset;
+  border-color: transparent !important;
 }
 input:hover,
 select:hover,
