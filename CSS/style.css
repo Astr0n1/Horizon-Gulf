@@ -516,3 +516,65 @@ div.services .cards {
 .solutions-cards div:hover::after{
   scale: 1.05;
 }
+/*  */
+.register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+.register form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0 0 10px #CCC;
+  border-radius: 10px;
+  width: 60vw;
+  min-width: 700px;
+  max-width: 1000px;
+}
+.register label{
+  display: block;
+  transform: translateY(5px);
+  font-size: 1.1rem;
+  line-height: 0rem;
+}
+.register .HW{
+  width: calc(50% - 10px);
+}
+.register .FW,
+.register .FW > *,
+.register .HW > *{
+  width: 100%;
+}
+input,
+select{
+  font-size: 1rem;
+  padding: 15px;
+  color: #666;
+  border: 1.5px solid #CCC;
+  background-color: #fff;
+  border-radius: 8px;
+}
+input[type="file"]{
+  position: relative;
+  padding: 80px 50px 60px;
+  margin: auto;
+  border: 2.5px dashed rgb(87, 87, 87);
+}
+input:hover,
+select:hover {
+  border-color: #17C32A;
+}
+input[type="file"]::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f093";
+  font-size: 1.2rem;
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-50%);
+}
