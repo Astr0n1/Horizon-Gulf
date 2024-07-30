@@ -329,7 +329,7 @@
           <label for="License">Have a License?</label>
           <br>
           <select  id="License">
-            <option selected hidden disabled=""></option>
+            <option selected hidden disabled>Yes | No</option>
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
@@ -338,21 +338,28 @@
           <label for="Car">Have a Car?</label>
           <br>
           <select  id="Car">
-            <option selected hidden disabled=""></option>
+            <option selected hidden disabled>Yes | No</option>
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
         </div>
-        <div class="hw file">
+        <div class="hw">
           <label for="CV">CV:</label>
-          <br>
-          <input type="file" id="CV">
+          <br>  
+          <div class="file">
+            <i class="fa fa-upload fa-2x" aria-hidden="true"></i>
+            <input type="file" id="CV">
+          </div>
         </div>
-        <div class="hw file">
+        <div class="hw ">
           <label for="ID">Emirates ID:</label>
           <br>
-          <input type="file" id="ID">
+          <div class="file">
+            <i class="fa fa-upload fa-2x" aria-hidden="true"></i>
+            <input type="file" id="ID">
+          </div>
         </div>
+        <input type="submit" value="Submit" class="bg-green">
       </form>
     </div>
     <div class="contacts">

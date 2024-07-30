@@ -370,12 +370,12 @@ div.services .cards {
 .who article + article {
   border-top: 1px solid #ddd;
 }
-@media (max-width:1300px) {
-  .who{
+@media (max-width: 1300px) {
+  .who {
     flex-direction: column;
     gap: 50px;
   }
-  .who > *{
+  .who > * {
     width: 90vw;
     align-items: center;
   }
@@ -388,93 +388,93 @@ div.services .cards {
   display: flex;
   align-items: center;
 }
-.solutions-header > div{
+.solutions-header > div {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   flex: 1;
 }
-@media (max-width:910px) {
-  .solutions-header{
+@media (max-width: 910px) {
+  .solutions-header {
     flex-direction: column;
     gap: 30px;
   }
 }
-.solutions-header img{
+.solutions-header img {
   left: -20%;
   top: 0;
   position: absolute;
   width: 70%;
   object-fit: cover;
 }
-.solutions-header h3{
+.solutions-header h3 {
   color: white;
   font-size: 2.5rem;
   line-height: 3rem;
   width: 402px;
 }
-@media (max-width:910px) {
-  .solutions-header h3{
+@media (max-width: 910px) {
+  .solutions-header h3 {
     text-align: center;
     width: 100%;
   }
 }
-.solutions-header a{
+.solutions-header a {
   padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.6);
   color: white;
   transition: 0.3s linear;
 }
-.bg-green{
-  background-color: #17C32A;
+.bg-green {
+  background-color: #17c32a;
 }
-.bg-blue{
-  background-color: #1DA9EB;
+.bg-blue {
+  background-color: #1da9eb;
 }
-.bg-green:hover{
-  background-color: #1DA9EB;
+.bg-green:hover {
+  background-color: #1da9eb;
 }
-.bg-blue:hover{
+.bg-blue:hover {
   background-color: #2199d1;
 }
-.solutions-content{
+.solutions-content {
   display: flex;
   gap: 40px;
 }
-.solutions-content > div:first-child{
+.solutions-content > div:first-child {
   width: 40%;
 }
-.solutions-cards{
+.solutions-cards {
   width: calc(60% - 40px);
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fill, calc(50% - 15px));
 }
-@media (max-width:1400px) {
-  .solutions-content{
+@media (max-width: 1400px) {
+  .solutions-content {
     align-items: center;
     flex-direction: column;
   }
-  .solutions-content > div:first-child{
+  .solutions-content > div:first-child {
     width: 100%;
     text-align: center;
   }
-  .solutions-cards{
+  .solutions-cards {
     width: 100%;
   }
 }
-@media (max-width:900px) {
-  .solutions-cards{
+@media (max-width: 900px) {
+  .solutions-cards {
     grid-template-columns: repeat(auto-fill, 100%);
   }
 }
-.solutions-content h4{
+.solutions-content h4 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
-.solutions-cards div{
+.solutions-cards div {
   position: relative;
   padding: 50px 30px;
   box-shadow: 0 0 10px #ccc;
@@ -482,26 +482,26 @@ div.services .cards {
   counter-increment: card;
   transition: 0.3s;
 }
-.solutions-cards div::after{
+.solutions-cards div::after {
   content: counter(card);
   position: absolute;
   top: 10px;
   right: 30px;
   display: flex;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  color: #EEE;
+  color: #eee;
   font-size: 1.8rem;
   background-color: #03a4ed;
   font-weight: 800;
   border: 2px solid black;
   transition: 0.3s;
 }
-@media (max-width:400px) {
-  .solutions-cards div::after{
+@media (max-width: 400px) {
+  .solutions-cards div::after {
     top: 25px;
     right: 25px;
     width: 30px;
@@ -509,72 +509,95 @@ div.services .cards {
     font-size: 1.5rem;
   }
 }
-.solutions-cards div:hover{
-  scale:1.05;
-  box-shadow: 0 0 15px #AAA;
+.solutions-cards div:hover {
+  scale: 1.05;
+  box-shadow: 0 0 15px #aaa;
 }
-.solutions-cards div:hover::after{
+.solutions-cards div:hover::after {
   scale: 1.05;
 }
 /*  */
-.register{
+.register {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 50px;
 }
-.register form{
+.register form {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   text-align: left;
-  padding: 20px;
-  box-shadow: 0 0 10px #CCC;
+  padding: 30px;
+  box-shadow: 0 0 10px #ccc;
   border-radius: 10px;
   width: 60vw;
   min-width: 700px;
   max-width: 1000px;
 }
-.register label{
+@media (max-width: 800px) {
+  .register form {
+    width: 90vw;
+    min-width: unset;
+  }
+}
+.register label {
   display: block;
   transform: translateY(5px);
   font-size: 1.1rem;
   line-height: 0rem;
 }
-.register .HW{
-  width: calc(50% - 10px);
+.register .HW {
+  width: calc(50% - 15px);
+}
+@media (max-width: 600px) {
+  .register .HW{
+    width: 100%;
+  }
 }
 .register .FW,
 .register .FW > *,
-.register .HW > *{
+.register .HW > * {
   width: 100%;
 }
-input,
-select{
+.register input:not([type="submit"]),
+.register select {
   font-size: 1rem;
   padding: 15px;
   color: #666;
-  border: 1.5px solid #CCC;
+  border: 1.5px solid #ccc;
   background-color: #fff;
   border-radius: 8px;
 }
-input[type="file"]{
-  position: relative;
-  padding: 80px 50px 60px;
-  margin: auto;
-  border: 2.5px dashed rgb(87, 87, 87);
+.file {
+  padding-block: 40px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px dashed rgb(87, 87, 87);
+  border-radius: 10px;
+}
+input[type="file"] {
+  width: 240px;
+  border: unset;
 }
 input:hover,
-select:hover {
-  border-color: #17C32A;
+select:hover,
+.file:hover {
+  border-color: #17c32a;
 }
-input[type="file"]::before{
-  font-family: "Font Awesome 5 Free";
-  content: "\f093";
-  font-size: 1.2rem;
-  position: absolute;
+
+.register [type="submit"]{
+  position: relative;
   left: 50%;
-  top: 40px;
   transform: translateX(-50%);
+  color: white;
+  border: unset;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  padding: 15px ;
+  width: 200px;
+  transition: 0.5s;
 }
