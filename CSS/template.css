@@ -125,7 +125,7 @@ header {
   width: 200px;
 }
 @media (max-width: 1100px) {
-  .logo{
+  .logo {
     width: 150px;
   }
   a,
@@ -136,13 +136,12 @@ header {
   }
 }
 @media (max-width: 400px) {
-  .logo{
+  .logo {
     width: 100px;
   }
-  .menu i{
+  .menu i {
     font-size: 2rem;
   }
-
 }
 .nav,
 nav {
@@ -163,7 +162,7 @@ header .registration {
   transition: 0.5s;
 }
 header .registration:hover {
-  background-color: #1CC4FF;
+  background-color: #1cc4ff;
 }
 header .services option {
   background-color: white;
@@ -220,8 +219,10 @@ header .services {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
-  margin-top: 20px;
+}
+.contacts {
+  margin-block: 50px;
+  gap: 70px;
 }
 .contacts .classic *:hover {
   color: var(--gray);
@@ -231,31 +232,85 @@ header .services {
   gap: 10px;
 }
 .social a {
+  position: relative;
   padding: 15px;
-  background-color: #ffe;
+  box-shadow: 3px 6px 10px rgb(220, 220, 220, 0.5);
+  transition: 0.5s;
   border-radius: 50%;
+}
+.social p {
+  position: absolute;
+  z-index: -1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  text-wrap: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease-out;
+  color: white;
+}
+.social p::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 50%;
+  bottom: -56%;
+  transform: translateX(-50%);
+  transition: 0.3s ease-out;
+  border-style: solid;
+  border-width: 10px;
 }
 .social a:hover {
   color: white;
 }
-.social .facebook:hover {
-  background-color: blue;
+
+.social .facebook:hover,
+.social .facebook:hover p {
+  background-color: #2053c2;
 }
-.social .whatsapp:hover {
-  background-color: var(--dark-green);
+.social .facebook:hover p{
+  transform: translate(-50%, -60px);
 }
-.social .instagram:hover {
-  background-color: violet;
+.social .facebook:hover p::after {
+  border-top-color: #2053c2;
 }
-.social .linkedin:hover {
-  background-color: lightskyblue;
+.social .whatsapp:hover,
+.social .whatsapp:hover p {
+  background-color: #17c32a;
+}
+.social .whatsapp:hover p::after {
+  border-top-color: #17c32a;
+}
+.social .whatsapp:hover p {
+  transform: translate(-50%, -60px);
+}
+.social .instagram:hover,
+.social .instagram:hover p {
+  background-color: rgb(236, 53, 175);
+}
+.social .instagram:hover p::after {
+  border-top-color: rgb(236, 53, 175);
+}
+.social .instagram:hover p {
+  transform: translate(-50%, -60px);
+}
+.social .linkedin:hover,
+.social .linkedin:hover p {
+  background-color: #40b2ff;
+}
+.social .linkedin:hover p::after {
+  border-top-color: #40b2ff;
+}
+.social .linkedin:hover p {
+  transform: translate(-50%, -60px);
 }
 .copy {
   color: #555;
   text-align: center;
 }
-@media (max-width:600px) {
-  .fs-300{
+@media (max-width: 600px) {
+  .fs-300 {
     font-size: 0.5rem;
   }
 }
